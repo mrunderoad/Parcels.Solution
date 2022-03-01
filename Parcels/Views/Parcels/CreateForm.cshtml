@@ -4,9 +4,13 @@
   <meta charset="utf-8">
   <title>Mail Your Package</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  
 </head>
 <body>
+  <style>
+    body {
+      background-color: red;
+    }
+  </style>
   <div class="container">
     <h1>Enter Package Information Here</h1>
     <form action="/parcels" method="post">
@@ -26,6 +30,14 @@
       <label for="weight">Weight: </label>
       <input type="text" id="weight" name="weight">
       <br>
+      <label for="height">Height: </label>
+      <input type="text" id="height" name="height">
+      <br>
+      <label for="length">Length: </label>
+      <input type="text" id="length" name="length">
+      <br>
+      <label for="width">Width: </label>
+      <input type="text" id="width" name="width">
       <button type="submit">Submit</button>
     </form>
   </div>
