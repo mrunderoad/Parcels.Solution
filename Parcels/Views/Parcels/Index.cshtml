@@ -1,0 +1,20 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Look up a package</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+<h1>Here are the Packages that correspond to your request: </h1>
+@using Parcels.Models
+
+  <ul>
+  @foreach(Parcel parcel in Model)
+  {
+    <li> @placeholder </li>
+  }
+  </ul>
+  <a href="parcel/create">Mail off a package?</a>
+</body>
+</html>
